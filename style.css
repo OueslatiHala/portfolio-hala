@@ -1,0 +1,133 @@
+/* Global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9900;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background: #222;
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #ddd;
+}
+
+header .tagline {
+    color: #ff6600;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Experience & Projects */
+.experience-card,
+.project-card {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Tech badges */
+.tech-badges {
+    margin: 10px 0;
+}
+
+.tech-badge {
+    background: #0066cc;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
